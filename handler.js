@@ -12,6 +12,9 @@ const arrayInstrumentations = {};
 });
 
 function get(target, key, receiver) {
+    // if(arrayInstrumentations.hasOwnProperty(key)){
+
+    // }
   track(target, trackOpTypes.GET, key);
   const res = Reflect.get(target, key, receiver); //用receiver是因为this指向问题
   if (isObj(res)) {

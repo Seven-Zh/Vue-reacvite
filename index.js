@@ -38,14 +38,19 @@ import { reactive } from "./reactive.js";
 
 const arr = [1, 2, 3, 4, 5, 6];
 
-const state = reactive(arr)
+const state = reactive(arr);
 
-state[0]
+state[0];
 
 // state.forEach(item => {
-    
+
 // });
 
-console.log(state.includes(1))
+console.log(state.includes(1));
 
-state.push(7)
+const obj = reactive({});
+state.push(obj);
+
+console.log(state.includes(obj));
+
+console.log(state)
