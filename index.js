@@ -49,6 +49,7 @@ state[0];
 console.log(state.includes(1));
 
 const obj = reactive({});
+
 state.push(obj);
 
 console.log(state.includes(obj));
