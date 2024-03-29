@@ -3,5 +3,5 @@ export function isObj(value) {
 }
 
 export function hasChanged(n, o) {
-  return Object.is(n, o);
+  return !Object.is(n, o);
 }
